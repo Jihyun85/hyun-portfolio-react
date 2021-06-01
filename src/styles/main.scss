@@ -24,10 +24,11 @@
 @import "./components/gnb";
 @import "./components/iconBtn";
 @import "./components/subtitle";
-
+@import "./components/profile";
 // layouts
 @import "./layouts/header";
 @import "./layouts/greeting";
+@import "./layouts/about.scss";
 
 // extends
 @import "./extends/btn";

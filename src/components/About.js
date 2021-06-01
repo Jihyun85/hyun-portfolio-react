@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../images/profile_1.jpg";
+import Profile from "./Profile";
 import Subtitle from "./Subtitle";
 
 const About = () => (
@@ -7,9 +8,7 @@ const About = () => (
     <Subtitle subtitle="소개" />
 
     <div class="about-content">
-      <div class="profile about-profile">
-        <img src={profile} alt="프로필 사진" />
-      </div>
+      <Profile className="about-profile" profile={profile} />
       <div>
         <dl class="description-list">
           <div class="description-item">

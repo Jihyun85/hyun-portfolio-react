@@ -20,6 +20,13 @@
 @import "./mixins/base-margin";
 @import "./mixins/text-style";
 
+// components
+@import "./components/gnb";
+@import "./components/iconBtn";
+
+// layouts
+@import "./layouts/header";
+
 // extends
 @import "./extends/btn";
 @import "./extends/form-element";

@@ -1,0 +1,30 @@
+.subtitle {
+  @include flexbox-column(start);
+}
+
+.subtitle-text {
+  @include text-style(16, $dark-gray);
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  @include responsive(T) {
+    @include text-style(20);
+    margin-bottom: 10px;
+  }
+
+  @include responsive(D) {
+    @include text-style(24);
+  }
+}
+
+.divider {
+  @include base-margin-bottom();
+  width: 100px;
+  height: 2px;
+  background-color: $light-gray;
+
+  @include responsive(T) {
+    width: 200px;
+    height: 3px;
+  }
+}

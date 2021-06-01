@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Greeting from "../components/Greeting";
 
 const Home = () => (
   <>
-    <Link to="/resume">resume로 가기</Link>
+    <Greeting />
   </>
 );
 

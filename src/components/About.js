@@ -4,18 +4,18 @@ import Profile from "./Profile";
 import Subtitle from "./Subtitle";
 
 const About = () => (
-  <article id="aboutBox" class="about">
+  <article id="aboutBox" className="about">
     <Subtitle subtitle="소개" />
 
-    <div class="about-content">
+    <div className="about-content">
       <Profile className="about-profile" profile={profile} />
       <div>
-        <dl class="description-list">
-          <div class="description-item">
+        <dl className="description-list">
+          <div className="description-item">
             <dt>이름</dt>
             <dd>안지현</dd>
           </div>
-          <div class="description-item">
+          <div className="description-item">
             <dt>이메일</dt>
             <dd>
               <a href="mailto:hyun.front.dev@gmail.com">
@@ -23,11 +23,11 @@ const About = () => (
               </a>
             </dd>
           </div>
-          <div class="description-item">
+          <div className="description-item">
             <dt>교육</dt>
             <dd>부트캠프 항해99(2기)</dd>
           </div>
-          <div class="description-item item-phrase">
+          <div className="description-item item-phrase">
             <dt>개발자가 된 이유</dt>
             <dd>
               (한국식 lorem ipsum) 국회나 그 위원회의 요구가 있을 때에는
@@ -39,7 +39,7 @@ const About = () => (
             </dd>
           </div>
         </dl>
-        <button type="button" class="about-btn btn-pink">
+        <button type="button" className="about-btn btn-pink">
           더 상세한 소개 보기
         </button>
       </div>

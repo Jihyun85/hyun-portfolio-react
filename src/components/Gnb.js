@@ -6,7 +6,7 @@ const Gnb = () => (
   <div className="gnb">
     <div className="gnb-left">
       <button id="menuBtn" className="sm-only" type="button">
-        <MdMenu class="iconBtn" aria-label="메뉴 열기 버튼" />
+        <MdMenu className="iconBtn" aria-label="메뉴 열기 버튼" />
       </button>
       <h1 className="sm-hidden">
         <a href="/">

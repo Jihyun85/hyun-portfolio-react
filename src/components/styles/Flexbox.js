@@ -19,19 +19,21 @@ const getFlexValue = (key) => {
   }
 };
 
-export const Flexbox = css`
+export const Flexbox = (jc = "center", ai = "center") => css`
   display: flex;
-  justify-content: ${(props) => getFlexValue(props.jc) || "center"};
-  align-items: ${(props) => getFlexValue(props.ai) || "center"};
+  justify-content: ${getFlexValue(jc)};
+  align-items: ${getFlexValue(ai)};
 `;
 
-export const FlexboxColumn = css`
-  ${Flexbox};
+export const FlexboxColumn = (jc = "center", ai = "center") => css`
+  display: flex;
   flex-direction: column;
+  justify-content: ${getFlexValue(jc)};
+  align-items: ${getFlexValue(ai)};
 `;
 
-export const InlineFlexbox = css`
+export const InlineFlexbox = (jc = "center", ai = "center") => css`
   display: inline-flex;
-  justify-content: ${(props) => getFlexValue(props.jc)};
-  align-items: ${(props) => getFlexValue(props.ai)};
+  justify-content: ${getFlexValue(jc)};
+  align-items: ${getFlexValue(ai)};
 `;

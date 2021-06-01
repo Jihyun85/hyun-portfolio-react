@@ -4,3 +4,10 @@
 @import "./constants/breakpoint";
 @import "./constants/padding";
 @import "./constants/z-index";
+
+// base
+@import "./base/normalize";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/drag";

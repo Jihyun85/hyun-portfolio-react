@@ -30,3 +30,14 @@
 // extends
 @import "./extends/btn";
 @import "./extends/form-element";
+
+body {
+  $sm-header-height: 50px;
+  $md-header-height: 80px;
+
+  padding-top: $sm-header-height;
+
+  @include responsive(T) {
+    padding-top: $md-header-height;
+  }
+}
